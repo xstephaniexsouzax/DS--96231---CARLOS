@@ -36,7 +36,7 @@ public class Prin {
         System.out.println("O autor do livro é " + l1.getAutor());
         System.out.println("O número de páginas do livro é " + l1.getNumeroPag());
         System.out.println("O preço do livro é " + l1.getPreco());
-        
+
 
         System.out.println("-------------------------" );
         System.out.println("LIVRO 2" );
@@ -44,6 +44,21 @@ public class Prin {
         System.out.println("O autor do livro é " + l2.getAutor());
         System.out.println("O número de páginas do livro é " + l2.getNumeroPag());
         System.out.println("O preço do livro é " + l2.getPreco());
+
+        // Pet
+
+        Pet p1 = new Pet("Bob", 2, "pitbul", "medio", "ração");
+        Pet p2 = new Pet("Dog", 5, "caramelo", "pequeno", "ração");
+        System.out.println("-------------------------" );
+        System.out.println("PET 1" );        
+        System.out.println("O nome do Pet é " + p1.getNome());
+        System.out.println("A idade do Pet é " + p1.getIdade());
+        System.out.println("A raça do Pet é " + p1.getRaca());
+        System.out.println("O porte do Pet é " + p1.getPorte());
+        System.out.println("A alimentação do Pet é " + p1.getAlimentacao());
+
+
+
 
 
 
