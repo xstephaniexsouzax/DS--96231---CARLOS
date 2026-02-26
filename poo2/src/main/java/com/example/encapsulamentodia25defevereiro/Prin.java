@@ -27,8 +27,8 @@ public class Prin {
         
         //Livro
         
-        Livro l1 =  new Livro("A morte é um dia que vale a pena se viver", "desconhecido", 200, 39.00);
-        Livro l2 = new Livro("A culpa é das estrelas", "Desconhecido", 300, 36.00);
+        Livro l1 =  new Livro("A morte é um dia que vale a pena se viver", "desconhecido", 200, 39.00, null);
+        Livro l2 = new Livro("A culpa é das estrelas", "Desconhecido", 300, 36.00, null);
 
         System.out.println("-------------------------" );
         System.out.println("LIVRO 1" );        
@@ -36,6 +36,7 @@ public class Prin {
         System.out.println("O autor do livro é " + l1.getAutor());
         System.out.println("O número de páginas do livro é " + l1.getNumeroPag());
         System.out.println("O preço do livro é " + l1.getPreco());
+        
 
         System.out.println("-------------------------" );
         System.out.println("LIVRO 2" );
