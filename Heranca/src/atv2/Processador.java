@@ -3,8 +3,8 @@ package atv2;
 public class Processador extends Componentes{
     private String frequencia;
 
-    public Processador(String marca, String modelo, String frequencia) {
-        super(marca, modelo);
+    public Processador(String marca, String modelo, String capacidadeDeArm, String frequencia) {
+        super(marca, modelo, capacidadeDeArm);
         this.frequencia = frequencia;
     }
 
