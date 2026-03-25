@@ -1,9 +1,8 @@
 package com.example.spring_basico.models;
 
-import jakarta.annotation.Generated;
-import jakarta.annotation.Nonnull;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
