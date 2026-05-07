@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="projeto" />
+        <module name="projeto2904" />
+        <module name="Aula-05.05.2026" />
+        <module name="api (1)" />
+        <module name="api" />
+        <module name="revisao" />
+        <module name="api0704" />
+        <module name="exercicio" />
+        <module name="spring-basico" />
+        <module name="projeto (1)" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Aula-05.05.2026" options="-parameters" />
+      <module name="api" options="-parameters" />
+      <module name="api (1)" options="-parameters" />
+      <module name="api0704" options="-parameters" />
+      <module name="exercicio" options="-parameters" />
+      <module name="projeto" options="-parameters" />
+      <module name="projeto (1)" options="-parameters" />
+      <module name="projeto2904" options="-parameters" />
+      <module name="revisao" options="-parameters" />
+      <module name="spring-basico" options="-parameters" />
+    </option>
+  </component>
+</project>

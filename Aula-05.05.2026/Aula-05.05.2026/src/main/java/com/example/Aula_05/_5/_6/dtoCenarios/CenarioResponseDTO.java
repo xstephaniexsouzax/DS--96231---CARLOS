@@ -12,6 +12,9 @@ public class CenarioResponseDTO {
         this.cultura = cultura;
     }
 
+    public CenarioResponseDTO(String nome, double valorVelocidade) {
+    }
+
     public String getClima() {
         return clima;
     }

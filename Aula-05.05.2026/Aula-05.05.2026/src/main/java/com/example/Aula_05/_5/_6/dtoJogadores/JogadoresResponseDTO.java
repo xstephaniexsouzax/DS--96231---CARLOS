@@ -4,13 +4,15 @@ public class JogadoresResponseDTO {
 
     private String nome;
     private double valorVelocidade;
+    private double agilidade;
 
     public JogadoresResponseDTO() {
     }
 
-    public JogadoresResponseDTO(String nome, double valorVelocidade) {
+    public JogadoresResponseDTO(String nome, double valorVelocidade, double agilidade) {
         this.nome = nome;
         this.valorVelocidade = valorVelocidade;
+        this.agilidade = agilidade;
     }
 
     public String getNome() {
@@ -27,5 +29,13 @@ public class JogadoresResponseDTO {
 
     public void setValorVelocidade(double valorVelocidade) {
         this.valorVelocidade = valorVelocidade;
+    }
+
+    public double getAgilidade() {
+        return agilidade;
+    }
+
+    public void setAgilidade(double agilidade) {
+        this.agilidade = agilidade;
     }
 }

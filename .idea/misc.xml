@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/api/api/pom.xml" />
+        <option value="$PROJECT_DIR$/api0704/api0704/pom.xml" />
+        <option value="$PROJECT_DIR$/projeto/projeto/pom.xml" />
+        <option value="$PROJECT_DIR$/revisão/pom.xml" />
+        <option value="$PROJECT_DIR$/exercicio/exercicio/pom.xml" />
+        <option value="$PROJECT_DIR$/projeto2904/projeto2904/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-basico/spring-basico/pom.xml" />
+        <option value="$PROJECT_DIR$/Aula-05.05.2026/Aula-05.05.2026/pom.xml" />
+        <option value="$PROJECT_DIR$/api-pets-01.04.2026/api/pom.xml" />
+        <option value="$PROJECT_DIR$/DS-96231-X-DTO-CRIPTO/DS-96231-X-DTO-CRIPTO/projeto/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_23" default="true" project-jdk-name="23" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

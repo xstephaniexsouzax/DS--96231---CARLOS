@@ -23,10 +23,19 @@ public class JogadoresModel {
     public JogadoresModel() {
     }
 
-    public JogadoresModel(String nome, double valorVelocidade, double agilidade) {
+    public JogadoresModel(Long id, String nome, double valorVelocidade, double agilidade) {
+        this.id = id;
         this.nome = nome;
         this.valorVelocidade = valorVelocidade;
         this.agilidade = agilidade;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getNome() {

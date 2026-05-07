@@ -1,6 +1,7 @@
 package com.example.Aula_05._5._6.controller;
 
 
+import com.example.Aula_05._5._6.dtoCenarios.CenarioRequestDTO;
 import com.example.Aula_05._5._6.dtoPersonagem.PersonagemRequestDTO;
 import com.example.Aula_05._5._6.dtoPersonagem.PersonagemResponseDTO;
 import com.example.Aula_05._5._6.services.PersonagemService;
@@ -34,6 +35,27 @@ public class PersonagemController {
                 return ResponseEntity
                         .status(HttpStatus.CREATED)
                         .body(Map.of("Mensagem", "Personagem cadastrado com sucesso"));
+    }
+
+    //atualizar
+    @PutMapping("/{id}")
+    public ResponseEntity<Map<String, Object>>atualizar(
+            @PathVariable Long id,
+            @Valid @RequestBody PersonagemRequestDTO personagemRequestDTO){
+        service.atualizarPersonagem(id, personagemRequestDTO);
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(Map.of("Mensagem","Personagem aualizado com sucesso"));
+    }
+
+    //deletar
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Map<String, Object>>deletar(@PathVariable Long id){
+        service.deletarPersonagem(id);
+
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(Map.of("Mensagem", "Personagem deletado com sucesso"));
     }
 
 }

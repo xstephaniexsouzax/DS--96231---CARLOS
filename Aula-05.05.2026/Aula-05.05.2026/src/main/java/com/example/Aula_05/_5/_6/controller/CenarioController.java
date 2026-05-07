@@ -20,6 +20,7 @@ public class CenarioController {
     @Autowired
     private CenarioServices services;
 
+    //listar
     @GetMapping
     public ResponseEntity<List<CenarioResponseDTO>>listar(){
         return ResponseEntity
@@ -27,6 +28,7 @@ public class CenarioController {
                 .body(services.listarTodos());
     }
 
+    //salvar
     @PostMapping
     public ResponseEntity<Map<String, Object>>salvar(
             @Valid @RequestBody CenarioRequestDTO cenarioRequestDTO){
@@ -35,5 +37,27 @@ public class CenarioController {
                 .status(HttpStatus.CREATED)
                 .body(Map.of("Mnesagem", "Cenário cadastrado com sucesso"));
     }
+
+    //atualizar
+    @PutMapping("/{id}")
+    public ResponseEntity<Map<String, Object>>atualizar(
+            @PathVariable Long id,
+            @Valid @RequestBody CenarioRequestDTO cenarioRequestDTO){
+        services.atualizarCenario(id, cenarioRequestDTO);
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(Map.of("Mensagem","Cenário aualizado com sucesso"));
+    }
+
+    //deletar
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Map<String, Object>>deletar(@PathVariable Long id){
+        services.deletarCenario(id);
+
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(Map.of("Mensagem", "Cenário deletado com sucesso"));
+    }
+
 
 }
