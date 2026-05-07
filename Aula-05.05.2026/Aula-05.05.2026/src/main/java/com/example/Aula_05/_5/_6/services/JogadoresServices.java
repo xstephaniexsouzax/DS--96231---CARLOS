@@ -28,7 +28,7 @@ public class JogadoresServices {
         return repository
                 .findAll()
                 .stream()
-                .map(u -> new JogadoresResponseDTO(u.getNome(), u.getValorVelocidade(),u.getAgilidade()))
+                .map(jogador -> new JogadoresResponseDTO(jogador.getNome(), jogador.getValorVelocidade()))
                 .toList();
     }
 
